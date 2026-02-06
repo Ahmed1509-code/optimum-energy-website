@@ -8,7 +8,24 @@ import {
     BarChart3,
     ThermometerSun,
     Cpu,
-    Wrench
+    Wrench,
+    Building2,
+    HeartPulse,
+    Hotel,
+    Factory,
+    Home as HomeIcon,
+    Plane,
+    GraduationCap,
+    Warehouse,
+    Snowflake,
+    Pill,
+    Anchor,
+    BadgeDollarSign,
+    Theater,
+    Briefcase,
+    CheckCircle2,
+    Target,
+    Zap
 } from 'lucide-react';
 
 export default function Home() {
@@ -120,20 +137,20 @@ export default function Home() {
 
                     <div className="markets-grid-simple">
                         {[
-                            { icon: "🏢", label: "Commercial" },
-                            { icon: "🏥", label: "Healthcare" },
-                            { icon: "🏨", label: "Hospitality" },
-                            { icon: "🏭", label: "Industrial" },
-                            { icon: "🏘️", label: "Residential" },
-                            { icon: "✈️", label: "Transportation" },
-                            { icon: "🎓", label: "Education" },
-                            { icon: "📦", label: "Warehouses" },
-                            { icon: "❄️", label: "Cold Stores" },
-                            { icon: "💊", label: "Pharmaceutical" },
-                            { icon: "⚓", label: "Marine" },
-                            { icon: "🏦", label: "Banking" },
-                            { icon: "🎭", label: "Entertainment" },
-                            { icon: "🏢", label: "Offices" }
+                            { icon: <Building2 className="text-accent" size={32} strokeWidth={1.5} />, label: "Commercial" },
+                            { icon: <HeartPulse className="text-accent" size={32} strokeWidth={1.5} />, label: "Healthcare" },
+                            { icon: <Hotel className="text-accent" size={32} strokeWidth={1.5} />, label: "Hospitality" },
+                            { icon: <Factory className="text-accent" size={32} strokeWidth={1.5} />, label: "Industrial" },
+                            { icon: <HomeIcon className="text-accent" size={32} strokeWidth={1.5} />, label: "Residential" },
+                            { icon: <Plane className="text-accent" size={32} strokeWidth={1.5} />, label: "Transportation" },
+                            { icon: <GraduationCap className="text-accent" size={32} strokeWidth={1.5} />, label: "Education" },
+                            { icon: <Warehouse className="text-accent" size={32} strokeWidth={1.5} />, label: "Warehouses" },
+                            { icon: <Snowflake className="text-accent" size={32} strokeWidth={1.5} />, label: "Cold Stores" },
+                            { icon: <Pill className="text-accent" size={32} strokeWidth={1.5} />, label: "Pharmaceutical" },
+                            { icon: <Anchor className="text-accent" size={32} strokeWidth={1.5} />, label: "Marine" },
+                            { icon: <BadgeDollarSign className="text-accent" size={32} strokeWidth={1.5} />, label: "Banking" },
+                            { icon: <Theater className="text-accent" size={32} strokeWidth={1.5} />, label: "Entertainment" },
+                            { icon: <Briefcase className="text-accent" size={32} strokeWidth={1.5} />, label: "Offices" }
                         ].map((market, index) => (
                             <ScrollReveal key={index} delay={index * 0.05}>
                                 <div className="market-item glass-effect">
@@ -231,7 +248,7 @@ export default function Home() {
                                 ].map((feature, index) => (
                                     <ScrollReveal key={index} delay={index * 0.1} width="100%">
                                         <li>
-                                            <div className="feature-icon">✓</div>
+                                            <div className="feature-icon"><CheckCircle2 className="text-primary" size={24} /></div>
                                             <div>
                                                 <strong>{feature.title}</strong>
                                                 <p>{feature.desc}</p>
@@ -244,14 +261,14 @@ export default function Home() {
                         <div className="why-choose-visual">
                             <ScrollReveal delay={0.2} width="100%">
                                 <div className="visual-card">
-                                    <div className="visual-icon">🎯</div>
+                                    <div className="visual-icon"><Target size={48} className="text-primary" strokeWidth={1.5} /></div>
                                     <h3>Mission-Driven</h3>
                                     <p>Optimizing energy usage and equipment lifetime</p>
                                 </div>
                             </ScrollReveal>
                             <ScrollReveal delay={0.4} width="100%">
                                 <div className="visual-card">
-                                    <div className="visual-icon">🚀</div>
+                                    <div className="visual-icon"><Zap size={48} className="text-primary" strokeWidth={1.5} /></div>
                                     <h3>Innovation First</h3>
                                     <p>Leading digital transformation in building automation</p>
                                 </div>

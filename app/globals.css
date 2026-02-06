@@ -20,12 +20,15 @@
     --gradient-premium: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
 
-    /* Neutral Colors */
-    --color-dark: hsl(225, 25%, 9%);
-    /* Sophisticated Near-Black */
-    --color-dark-soft: hsl(225, 20%, 15%);
-    --color-gray: hsl(220, 10%, 45%);
-    --color-gray-light: hsl(220, 12%, 94%);
+    /* Neutral Colors - High Contrast */
+    --color-dark: #0f172a;
+    /* Slate 900 */
+    --color-dark-soft: #1e293b;
+    /* Slate 800 */
+    --color-gray: #475569;
+    /* Slate 600 */
+    --color-gray-light: #f1f5f9;
+    /* Slate 100 */
     --color-white: #ffffff;
 
     /* Glassmorphism Defaults */
@@ -35,8 +38,8 @@
     --glass-blur: blur(12px);
 
     /* Typography */
-    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
-    --font-display: 'Space Grotesk', var(--font-primary);
+    /* Typography - Font variables injected via Next.js Layout */
+    /* --font-primary and --font-display are defined in layout.tsx */
 
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
@@ -164,6 +167,10 @@ img {
     font-weight: 800;
 }
 
+.text-secondary {
+    color: var(--color-secondary);
+}
+
 .section-header {
     margin-bottom: var(--spacing-2xl);
 }
@@ -252,7 +259,8 @@ img {
 .btn-primary {
     background: var(--gradient-premium);
     color: var(--color-white);
-    box-shadow: var(--shadow-soft);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    border: none;
 }
 
 .btn-primary:hover {
@@ -262,7 +270,7 @@ img {
 
 .btn-secondary {
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.9);
     color: var(--color-white);
     backdrop-filter: blur(5px);
 }
@@ -325,13 +333,14 @@ img {
     backdrop-filter: var(--glass-blur);
     border-bottom: 1px solid var(--glass-border);
     transition: var(--transition-smooth);
-    padding: 0.5rem 0;
+    padding: 1rem 0;
 }
 
 .navbar.scrolled {
-    padding: 0.4rem 0;
-    background: rgba(255, 255, 255, 0.98);
+    padding: 0.6rem 0;
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(12px);
 }
 
 .nav-container {
@@ -503,7 +512,7 @@ img {
 }
 
 .hero-left {
-    max-width: 700px;
+    max-width: 640px;
 }
 
 .hero-right {
@@ -541,35 +550,47 @@ img {
 
 .stat-block {
     flex: 1;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.5rem 1rem;
     border-radius: var(--border-radius-lg);
     text-align: center;
     transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .stat-block:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
     transform: translateY(-5px);
-    border-color: var(--color-primary-soft);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.stat-icon {
+    margin-bottom: 0.25rem;
+    color: var(--color-secondary);
+    opacity: 0.9;
 }
 
 .stat-number {
-    font-size: var(--font-size-xl);
+    font-size: 2.5rem;
     font-weight: 800;
     font-family: var(--font-display);
     color: var(--color-white);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
+    line-height: 1;
 }
 
 .stat-label {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
 }
 
 @keyframes float {
@@ -1927,6 +1948,7 @@ img {
     height: 100%;
     background: radial-gradient(circle at center, #1b2838 0%, #0a0f18 100%);
     z-index: 1;
+    opacity: 0.5;
 }
 
 .hero-background::after {
