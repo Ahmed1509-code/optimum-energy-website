@@ -2,6 +2,14 @@
 import Link from 'next/link';
 import HeroSection from '@/components/home/hero-section';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
+import {
+    Settings,
+    Lightbulb,
+    BarChart3,
+    ThermometerSun,
+    Cpu,
+    Wrench
+} from 'lucide-react';
 
 export default function Home() {
     return (
@@ -53,74 +61,32 @@ export default function Home() {
                             {
                                 title: "Building Management Systems",
                                 desc: "Advanced BMS, GRMS, and chiller optimization for complete facility control",
-                                icon: (
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" />
-                                        <path d="M9 3v18M15 3v18M3 9h18M3 15h18" />
-                                    </svg>
-                                )
+                                icon: <Settings size={36} strokeWidth={1.5} />
                             },
                             {
                                 title: "Smart Lighting Solutions",
                                 desc: "Intelligent lighting systems and controls for energy-efficient illumination",
-                                icon: (
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <circle cx="12" cy="12" r="5" />
-                                        <line x1="12" y1="1" x2="12" y2="3" />
-                                        <line x1="12" y1="21" x2="12" y2="23" />
-                                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                                        <line x1="1" y1="12" x2="3" y2="12" />
-                                        <line x1="21" y1="12" x2="23" y2="12" />
-                                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-                                    </svg>
-                                )
+                                icon: <Lightbulb size={36} strokeWidth={1.5} />
                             },
                             {
                                 title: "Energy Management",
                                 desc: "Smart meters, AMR systems, and comprehensive energy monitoring solutions",
-                                icon: (
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                        <polyline points="14 2 14 8 20 8" />
-                                        <line x1="12" y1="18" x2="12" y2="12" />
-                                        <line x1="9" y1="15" x2="15" y2="15" />
-                                    </svg>
-                                )
+                                icon: <BarChart3 size={36} strokeWidth={1.5} />
                             },
                             {
                                 title: "HVAC Systems",
                                 desc: "Complete HVAC equipment supply, installation, and optimization services",
-                                icon: (
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <path
-                                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                                        <polyline points="7.5 4.21 12 6.81 16.5 4.21" />
-                                        <polyline points="7.5 19.79 7.5 14.6 3 12" />
-                                        <polyline points="21 12 16.5 14.6 16.5 19.79" />
-                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                                        <line x1="12" y1="22.08" x2="12" y2="12" />
-                                    </svg>
-                                )
+                                icon: <ThermometerSun size={36} strokeWidth={1.5} />
                             },
                             {
                                 title: "Systems Integration",
                                 desc: "Seamless integration of building systems for unified control and monitoring",
-                                icon: (
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                    </svg>
-                                )
+                                icon: <Cpu size={36} strokeWidth={1.5} />
                             },
                             {
                                 title: "Maintenance & Support",
                                 desc: "Planned service agreements and comprehensive operation & maintenance programs",
-                                icon: (
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg>
-                                )
+                                icon: <Wrench size={36} strokeWidth={1.5} />
                             }
                         ].map((service, index) => (
                             <ScrollReveal key={index} delay={index * 0.1}>

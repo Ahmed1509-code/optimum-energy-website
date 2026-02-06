@@ -34,98 +34,98 @@ export default function Markets() {
                     <div className="markets-grid">
 
                         <div className="market-card">
-                            <div className="market-icon"><Building2 className="w-12 h-12" /></div>
+                            <div className="market-icon"><Building2 size={36} strokeWidth={1.5} /></div>
                             <h3>Commercial</h3>
                             <p>Office buildings, shopping centers, and retail spaces with advanced building automation and
                                 energy management systems.</p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><Home className="w-12 h-12" /></div>
+                            <div className="market-icon"><Home size={36} strokeWidth={1.5} /></div>
                             <h3>Residential</h3>
                             <p>Residential complexes and communities with smart home integration and efficient energy solutions.
                             </p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><Hotel className="w-12 h-12" /></div>
+                            <div className="market-icon"><Hotel size={36} strokeWidth={1.5} /></div>
                             <h3>Hospitality</h3>
                             <p>Hotels and resorts with guest room management systems, energy optimization, and comfort control
                                 solutions.</p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><Stethoscope className="w-12 h-12" /></div>
+                            <div className="market-icon"><Stethoscope size={36} strokeWidth={1.5} /></div>
                             <h3>Healthcare</h3>
                             <p>Hospitals and medical facilities requiring critical environment monitoring, air quality control,
                                 and reliable HVAC systems.</p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><Briefcase className="w-12 h-12" /></div>
+                            <div className="market-icon"><Briefcase size={36} strokeWidth={1.5} /></div>
                             <h3>Offices</h3>
                             <p>Corporate offices with intelligent lighting, climate control, and integrated building management
                                 for productivity and comfort.</p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><GraduationCap className="w-12 h-12" /></div>
+                            <div className="market-icon"><GraduationCap size={36} strokeWidth={1.5} /></div>
                             <h3>Education</h3>
                             <p>Schools, universities, and educational institutions with energy-efficient systems and healthy
                                 learning environments.</p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><Theater className="w-12 h-12" /></div>
+                            <div className="market-icon"><Theater size={36} strokeWidth={1.5} /></div>
                             <h3>Entertainment</h3>
                             <p>Theaters, cinemas, and entertainment venues with specialized HVAC and lighting control systems.
                             </p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><Plane className="w-12 h-12" /></div>
+                            <div className="market-icon"><Plane size={36} strokeWidth={1.5} /></div>
                             <h3>Transportation</h3>
                             <p>Airports, train stations, and transit facilities with comprehensive building automation and
                                 energy management.</p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><Factory className="w-12 h-12" /></div>
+                            <div className="market-icon"><Factory size={36} strokeWidth={1.5} /></div>
                             <h3>Industrial & Factories</h3>
                             <p>Manufacturing facilities and industrial plants with process optimization, energy monitoring, and
                                 automation solutions.</p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><Anchor className="w-12 h-12" /></div>
+                            <div className="market-icon"><Anchor size={36} strokeWidth={1.5} /></div>
                             <h3>Marine</h3>
                             <p>Marine facilities and port operations with specialized automation and environmental control
                                 systems.</p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><BadgeDollarSign className="w-12 h-12" /></div>
+                            <div className="market-icon"><BadgeDollarSign size={36} strokeWidth={1.5} /></div>
                             <h3>Banking & Financial Sector</h3>
                             <p>Banks and financial institutions with secure, reliable building systems and critical environment
                                 monitoring.</p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><Package className="w-12 h-12" /></div>
+                            <div className="market-icon"><Package size={36} strokeWidth={1.5} /></div>
                             <h3>Warehouses</h3>
                             <p>Distribution centers and warehouses with efficient climate control and energy management systems.
                             </p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><Snowflake className="w-12 h-12" /></div>
+                            <div className="market-icon"><Snowflake size={36} strokeWidth={1.5} /></div>
                             <h3>Cold Stores</h3>
                             <p>Cold storage facilities with precise temperature control, monitoring systems, and
                                 energy-efficient refrigeration.</p>
                         </div>
 
                         <div className="market-card">
-                            <div className="market-icon"><FlaskConical className="w-12 h-12" /></div>
+                            <div className="market-icon"><FlaskConical size={36} strokeWidth={1.5} /></div>
                             <h3>Pharmaceutical Facilities</h3>
                             <p>Pharmaceutical manufacturing and research facilities with critical environment control and
                                 compliance monitoring.</p>
