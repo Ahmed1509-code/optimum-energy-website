@@ -20,8 +20,6 @@ const categoryIcons = {
 export default function ProjectsPage() {
     return (
         <main className="min-h-screen bg-white">
-            <Navbar />
-
             {/* Page Header */}
             <section className="relative pt-32 pb-16 bg-zinc-50 border-b border-zinc-100 overflow-hidden">
                 <HeroHighlight containerClassName="absolute inset-0" />
